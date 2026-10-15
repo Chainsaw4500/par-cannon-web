@@ -1,0 +1,52 @@
+:root { --bg:#0D1310; --surface:#161E1A; --surface2:#1F2924; --line:#2C3832; --text:#F1ECDF; --muted:#9FA9A1; --accent:#D4F25A; --on-accent:#121A05; --info:#8CC0FF; --fairway:#2E4A2A; }
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+a { color: var(--info); }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+.display { font-family: 'Big Shoulders', 'Arial Narrow', sans-serif; font-weight: 900; text-transform: uppercase; letter-spacing: .01em; line-height: .95; }
+header { border-bottom: 1px solid var(--surface2); }
+header .wrap { display: flex; justify-content: space-between; align-items: center; min-height: 64px; gap: 16px; }
+.brand { font-size: 24px; color: var(--text); text-decoration: none; }
+.brand span, .accent { color: var(--accent); }
+nav a { color: var(--muted); text-decoration: none; font-weight: 700; font-size: 14px; margin-left: 18px; }
+nav a:hover { color: var(--text); }
+.hero { display: grid; grid-template-columns: 1.3fr 1fr; gap: 32px; align-items: center; padding: 56px 0; }
+.eyebrow { color: var(--muted); font-weight: 800; font-size: 12px; letter-spacing: .12em; }
+.hero h1 { font-size: clamp(44px, 8vw, 84px); margin: 12px 0 16px; }
+.lead { color: var(--muted); font-size: 18px; max-width: 34em; }
+.cta { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; margin-top: 24px; }
+.pill { display: inline-block; border-radius: 999px; font-weight: 800; padding: 13px 22px; text-decoration: none; }
+.pill.primary { background: var(--accent); color: var(--on-accent); }
+.pill.ghost { border: 1.5px solid var(--line); color: var(--text); }
+.note { color: var(--muted); font-weight: 700; font-size: 14px; }
+.phone { justify-self: center; width: 250px; aspect-ratio: 9 / 19.5; border-radius: 40px; border: 8px solid var(--surface2); background: var(--fairway); position: relative; overflow: hidden; }
+.phone img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.phone .yards { position: absolute; top: 36px; left: 18px; background: rgba(13,19,16,.85); border-radius: 14px; padding: 8px 14px; color: var(--accent); }
+.phone .yards b { display: block; font-size: 52px; }
+.phone .shot { position: absolute; left: 18px; right: 18px; bottom: 22px; background: var(--accent); color: var(--on-accent); border-radius: 999px; text-align: center; font-weight: 800; padding: 11px 0; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; padding-bottom: 48px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 22px; }
+.card h3 { font-size: 26px; margin: 0 0 10px; }
+.card li { color: var(--muted); }
+.card ul { padding-left: 18px; margin: 0; }
+.games { padding: 8px 0 48px; }
+.games h2 { font-size: 40px; margin: 0 0 16px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { border: 1.5px solid var(--line); border-radius: 999px; padding: 7px 14px; font-weight: 700; font-size: 14px; }
+.band { border: 1.5px solid var(--accent); border-radius: 22px; padding: 28px; display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; margin-bottom: 56px; }
+.band h2 { font-size: 40px; margin: 0 0 6px; }
+.band p { color: var(--muted); margin: 0; }
+footer { border-top: 1px solid var(--surface2); color: var(--muted); font-size: 13px; }
+footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 22px 16px; }
+footer a { color: var(--muted); margin-left: 14px; }
+.page { max-width: 760px; padding: 40px 16px 64px; }
+.page h1 { font-size: clamp(40px, 7vw, 64px); margin: 0 0 8px; }
+.page h2 { font-size: 20px; margin: 30px 0 6px; }
+.page h2.display { font-size: 32px; margin-top: 36px; }
+.updated { color: var(--muted); font-size: 14px; margin: 0 0 24px; }
+.page p { margin: 0 0 10px; }
+.faq details { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; margin-bottom: 10px; }
+.faq summary { font-weight: 800; cursor: pointer; }
+.faq details p { color: var(--muted); margin: 10px 0 0; }
+@media (max-width: 760px) { .hero { grid-template-columns: 1fr; padding: 36px 0; } .phone { width: 210px; } nav a { margin-left: 12px; } }
