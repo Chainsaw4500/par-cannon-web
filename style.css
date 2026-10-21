@@ -49,4 +49,10 @@ footer a { color: var(--muted); margin-left: 14px; }
 .faq details { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; margin-bottom: 10px; }
 .faq summary { font-weight: 800; cursor: pointer; }
 .faq details p { color: var(--muted); margin: 10px 0 0; }
+.screens { padding: 8px 0 48px; }
+.screens h2 { font-size: 40px; margin: 0 0 18px; }
+.shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+.shots figure { margin: 0; text-align: center; }
+.phone.small { width: 100%; max-width: 230px; margin: 0 auto; border-radius: 34px; border-width: 7px; }
+.shots figcaption { color: var(--muted); font-weight: 700; font-size: 14px; margin-top: 12px; }
 @media (max-width: 760px) { .hero { grid-template-columns: 1fr; padding: 36px 0; } .phone { width: 210px; } nav a { margin-left: 12px; } }
